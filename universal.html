@@ -1,0 +1,2477 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1316376a9abd99106b11f975c8ee202b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+<div style="position: fixed;
+            bottom: 50px; left: 50px; width: 150px; height: 90px;
+            border:2px solid grey; z-index:9999; font-size:12px;
+            background-color:white; padding: 5px;">
+    <b>Universal is:</b><br>
+    <i style="background:green; width:15px; height:15px; display:inline-block;"></i> hold<br>
+    <i style="background:red; width:15px; height:15px; display:inline-block;"></i> not hold<br>
+</div>
+    
+            <div class="folium-map" id="map_1316376a9abd99106b11f975c8ee202b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_1316376a9abd99106b11f975c8ee202b = L.map(
+                "map_1316376a9abd99106b11f975c8ee202b",
+                {
+                    center: [30.0, 100.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 3,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_14823a8de66db7abe5e8f3f492762f36 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_14823a8de66db7abe5e8f3f492762f36.addTo(map_1316376a9abd99106b11f975c8ee202b);
+        
+    
+            var circle_marker_bf07573a7779441088a49fa8e358e576 = L.circleMarker(
+                [30.0, 31.0],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1316376a9abd99106b11f975c8ee202b);
+        
+    
+        var popup_02611a65bb877776527ca92ed7fe6db1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1bd0b3b5fc27020209d49f30f700d644 = $(`<div id="html_1bd0b3b5fc27020209d49f30f700d644" style="width: 100.0%; height: 100.0%;">             <b>Arabic</b><br>             Тип: 31.0<br>             Универсалия: both are marked the same         <b>Источник:</b><br>             hyding2005</div>`)[0];
+                popup_02611a65bb877776527ca92ed7fe6db1.setContent(html_1bd0b3b5fc27020209d49f30f700d644);
+            
+        
+
+        circle_marker_bf07573a7779441088a49fa8e358e576.bindPopup(popup_02611a65bb877776527ca92ed7fe6db1)
+        ;
+
+        
+    
+    
+            circle_marker_bf07573a7779441088a49fa8e358e576.bindTooltip(
+                `<div>
+                     Arabic: both are marked the same
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_aca7c2b792a46c53313fa2fda63fd44c = L.circleMarker(
+                [2.16666666667, 33.0],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1316376a9abd99106b11f975c8ee202b);
+        
+    
+        var popup_5f61ada9c733f79b3a9e295f3b5505b9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_92924cf8e838d5836f7c69707f9c5855 = $(`<div id="html_92924cf8e838d5836f7c69707f9c5855" style="width: 100.0%; height: 100.0%;">             <b>Lango</b><br>             Тип: 33.0<br>             Универсалия: none is marked         <b>Источник:</b><br>             noonan1992</div>`)[0];
+                popup_5f61ada9c733f79b3a9e295f3b5505b9.setContent(html_92924cf8e838d5836f7c69707f9c5855);
+            
+        
+
+        circle_marker_aca7c2b792a46c53313fa2fda63fd44c.bindPopup(popup_5f61ada9c733f79b3a9e295f3b5505b9)
+        ;
+
+        
+    
+    
+            circle_marker_aca7c2b792a46c53313fa2fda63fd44c.bindTooltip(
+                `<div>
+                     Lango: none is marked
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a94208b471d8ecd6fa57a6a091c0351f = L.circleMarker(
+                [13.5, 25.0],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1316376a9abd99106b11f975c8ee202b);
+        
+    
+        var popup_14cc99a48a8a518ee59074847457ca86 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c13a3b2b91ec9faf1b3b3accb6949519 = $(`<div id="html_c13a3b2b91ec9faf1b3b3accb6949519" style="width: 100.0%; height: 100.0%;">             <b>Fur</b><br>             Тип: 25.0<br>             Универсалия: none is marked         <b>Источник:</b><br>             jacobi1990</div>`)[0];
+                popup_14cc99a48a8a518ee59074847457ca86.setContent(html_c13a3b2b91ec9faf1b3b3accb6949519);
+            
+        
+
+        circle_marker_a94208b471d8ecd6fa57a6a091c0351f.bindPopup(popup_14cc99a48a8a518ee59074847457ca86)
+        ;
+
+        
+    
+    
+            circle_marker_a94208b471d8ecd6fa57a6a091c0351f.bindTooltip(
+                `<div>
+                     Fur: none is marked
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d2aca783c38986e56d0d66163a065e7c = L.circleMarker(
+                [11.0174, 29.3463],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1316376a9abd99106b11f975c8ee202b);
+        
+    
+        var popup_7f6f4d981a7f11c6699fa19905002804 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6c725dfa285b2d9baa07fd53709a63e4 = $(`<div id="html_6c725dfa285b2d9baa07fd53709a63e4" style="width: 100.0%; height: 100.0%;">             <b>Katcha</b><br>             Тип: 29.3463<br>             Универсалия: none is marked         <b>Источник:</b><br>             turner2016</div>`)[0];
+                popup_7f6f4d981a7f11c6699fa19905002804.setContent(html_6c725dfa285b2d9baa07fd53709a63e4);
+            
+        
+
+        circle_marker_d2aca783c38986e56d0d66163a065e7c.bindPopup(popup_7f6f4d981a7f11c6699fa19905002804)
+        ;
+
+        
+    
+    
+            circle_marker_d2aca783c38986e56d0d66163a065e7c.bindTooltip(
+                `<div>
+                     Katcha: none is marked
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_04a6c57850d77fb0471a242b5d45e341 = L.circleMarker(
+                [-25.0747, 17.9767],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1316376a9abd99106b11f975c8ee202b);
+        
+    
+        var popup_217380faea99fa59c443bac03b623486 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7478d4f8f20433ffa725f9d808ed479b = $(`<div id="html_7478d4f8f20433ffa725f9d808ed479b" style="width: 100.0%; height: 100.0%;">             <b>Nama</b><br>             Тип: 17.9767<br>             Универсалия: none is marked         <b>Источник:</b><br>             hagman1977</div>`)[0];
+                popup_217380faea99fa59c443bac03b623486.setContent(html_7478d4f8f20433ffa725f9d808ed479b);
+            
+        
+
+        circle_marker_04a6c57850d77fb0471a242b5d45e341.bindPopup(popup_217380faea99fa59c443bac03b623486)
+        ;
+
+        
+    
+    
+            circle_marker_04a6c57850d77fb0471a242b5d45e341.bindTooltip(
+                `<div>
+                     Nama: none is marked
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3d6edd12e1ac112ff89cf1c2222e1d63 = L.circleMarker(
+                [14.5879, 37.5292],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1316376a9abd99106b11f975c8ee202b);
+        
+    
+        var popup_0181ba34ae1efab29102a700ae29d464 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2d0a27540d60994479f43de653cfa39f = $(`<div id="html_2d0a27540d60994479f43de653cfa39f" style="width: 100.0%; height: 100.0%;">             <b>Kunama</b><br>             Тип: 37.5292<br>             Универсалия: none is marked         <b>Источник:</b><br>             gerhard1984</div>`)[0];
+                popup_0181ba34ae1efab29102a700ae29d464.setContent(html_2d0a27540d60994479f43de653cfa39f);
+            
+        
+
+        circle_marker_3d6edd12e1ac112ff89cf1c2222e1d63.bindPopup(popup_0181ba34ae1efab29102a700ae29d464)
+        ;
+
+        
+    
+    
+            circle_marker_3d6edd12e1ac112ff89cf1c2222e1d63.bindTooltip(
+                `<div>
+                     Kunama: none is marked
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0f669ecc17ca3bbeb095f874bd754225 = L.circleMarker(
+                [-19.688, 20.7673],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1316376a9abd99106b11f975c8ee202b);
+        
+    
+        var popup_ee8d7d6c12e2987f373f74079d1f2750 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b94cbcd7dca5feaec7454354afe37511 = $(`<div id="html_b94cbcd7dca5feaec7454354afe37511" style="width: 100.0%; height: 100.0%;">             <b>Ju|'hoan</b><br>             Тип: 20.7673<br>             Универсалия: none is marked         <b>Источник:</b><br>             dickens2005</div>`)[0];
+                popup_ee8d7d6c12e2987f373f74079d1f2750.setContent(html_b94cbcd7dca5feaec7454354afe37511);
+            
+        
+
+        circle_marker_0f669ecc17ca3bbeb095f874bd754225.bindPopup(popup_ee8d7d6c12e2987f373f74079d1f2750)
+        ;
+
+        
+    
+    
+            circle_marker_0f669ecc17ca3bbeb095f874bd754225.bindTooltip(
+                `<div>
+                     Ju|'hoan: none is marked
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e38dd6cb62854657800ccb78bc7a3a96 = L.circleMarker(
+                [13.75, 20.8333333333],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1316376a9abd99106b11f975c8ee202b);
+        
+    
+        var popup_a4f56c02c66790073cad112202633fc9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d2abe630d44c96071c0b0fd567410610 = $(`<div id="html_d2abe630d44c96071c0b0fd567410610" style="width: 100.0%; height: 100.0%;">             <b>Maba</b><br>             Тип: 20.8333333333<br>             Универсалия: both are marked the same         <b>Источник:</b><br>             weiss2009</div>`)[0];
+                popup_a4f56c02c66790073cad112202633fc9.setContent(html_d2abe630d44c96071c0b0fd567410610);
+            
+        
+
+        circle_marker_e38dd6cb62854657800ccb78bc7a3a96.bindPopup(popup_a4f56c02c66790073cad112202633fc9)
+        ;
+
+        
+    
+    
+            circle_marker_e38dd6cb62854657800ccb78bc7a3a96.bindTooltip(
+                `<div>
+                     Maba: both are marked the same
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ba10ae88d327cc0adbc73180b34d09db = L.circleMarker(
+                [12.5, -7.5],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1316376a9abd99106b11f975c8ee202b);
+        
+    
+        var popup_206ac3d05e51d99a7b9d2440831a7c6f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_55738d0f2ff517d966e03cbe90c20ca4 = $(`<div id="html_55738d0f2ff517d966e03cbe90c20ca4" style="width: 100.0%; height: 100.0%;">             <b>Bambara</b><br>             Тип: -7.5<br>             Универсалия: none is marked         <b>Источник:</b><br>             sauvant1913</div>`)[0];
+                popup_206ac3d05e51d99a7b9d2440831a7c6f.setContent(html_55738d0f2ff517d966e03cbe90c20ca4);
+            
+        
+
+        circle_marker_ba10ae88d327cc0adbc73180b34d09db.bindPopup(popup_206ac3d05e51d99a7b9d2440831a7c6f)
+        ;
+
+        
+    
+    
+            circle_marker_ba10ae88d327cc0adbc73180b34d09db.bindTooltip(
+                `<div>
+                     Bambara: none is marked
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bc92ad6b2fed834c6dab4c9283293ad0 = L.circleMarker(
+                [-5.0, 15.0],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1316376a9abd99106b11f975c8ee202b);
+        
+    
+        var popup_2455427ee713aa49bd958dab0863e3fe = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8a527ea6d78f025a223421b8d95df1f1 = $(`<div id="html_8a527ea6d78f025a223421b8d95df1f1" style="width: 100.0%; height: 100.0%;">             <b>Kongo</b><br>             Тип: 15.0<br>             Универсалия: none is marked         <b>Источник:</b><br>             mbiavanga2008</div>`)[0];
+                popup_2455427ee713aa49bd958dab0863e3fe.setContent(html_8a527ea6d78f025a223421b8d95df1f1);
+            
+        
+
+        circle_marker_bc92ad6b2fed834c6dab4c9283293ad0.bindPopup(popup_2455427ee713aa49bd958dab0863e3fe)
+        ;
+
+        
+    
+    
+            circle_marker_bc92ad6b2fed834c6dab4c9283293ad0.bindTooltip(
+                `<div>
+                     Kongo: none is marked
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c3e5eed87ec5f4f72d86e904e423fc0b = L.circleMarker(
+                [4.75, 7.41666666667],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1316376a9abd99106b11f975c8ee202b);
+        
+    
+        var popup_2f692c4f65c484d7a4e544181ae215b7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_70fab5b78600ceaeb50e0ec46d296842 = $(`<div id="html_70fab5b78600ceaeb50e0ec46d296842" style="width: 100.0%; height: 100.0%;">             <b>Kanuri</b><br>             Тип: 7.41666666667<br>             Универсалия: both are marked the same         <b>Источник:</b><br>             hutchison1981</div>`)[0];
+                popup_2f692c4f65c484d7a4e544181ae215b7.setContent(html_70fab5b78600ceaeb50e0ec46d296842);
+            
+        
+
+        circle_marker_c3e5eed87ec5f4f72d86e904e423fc0b.bindPopup(popup_2f692c4f65c484d7a4e544181ae215b7)
+        ;
+
+        
+    
+    
+            circle_marker_c3e5eed87ec5f4f72d86e904e423fc0b.bindTooltip(
+                `<div>
+                     Kanuri: both are marked the same
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f5dee2d09ae01a480a83d580969a1f07 = L.circleMarker(
+                [16.192, -3.73962],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1316376a9abd99106b11f975c8ee202b);
+        
+    
+        var popup_a42305dbc040f4ea9704132ee47dafbd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ffe8577b8491aa898c8d2e9747237e33 = $(`<div id="html_ffe8577b8491aa898c8d2e9747237e33" style="width: 100.0%; height: 100.0%;">             <b>Koyra Chiini</b><br>             Тип: -3.73962<br>             Универсалия: none is marked         <b>Источник:</b><br>             heath1999</div>`)[0];
+                popup_a42305dbc040f4ea9704132ee47dafbd.setContent(html_ffe8577b8491aa898c8d2e9747237e33);
+            
+        
+
+        circle_marker_f5dee2d09ae01a480a83d580969a1f07.bindPopup(popup_a42305dbc040f4ea9704132ee47dafbd)
+        ;
+
+        
+    
+    
+            circle_marker_f5dee2d09ae01a480a83d580969a1f07.bindTooltip(
+                `<div>
+                     Koyra Chiini: none is marked
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d9696e5464b8d1c29e3b305c06c81434 = L.circleMarker(
+                [56.0, 38.0],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1316376a9abd99106b11f975c8ee202b);
+        
+    
+        var popup_9d8eb105051eead887f0f9adbb05d519 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c94c05f56ddeb9d52fbefd03b991d6f1 = $(`<div id="html_c94c05f56ddeb9d52fbefd03b991d6f1" style="width: 100.0%; height: 100.0%;">             <b>Russian</b><br>             Тип: 38.0<br>             Универсалия: both are marked the same         <b>Источник:</b><br>             personal knowlege</div>`)[0];
+                popup_9d8eb105051eead887f0f9adbb05d519.setContent(html_c94c05f56ddeb9d52fbefd03b991d6f1);
+            
+        
+
+        circle_marker_d9696e5464b8d1c29e3b305c06c81434.bindPopup(popup_9d8eb105051eead887f0f9adbb05d519)
+        ;
+
+        
+    
+    
+            circle_marker_d9696e5464b8d1c29e3b305c06c81434.bindTooltip(
+                `<div>
+                     Russian: both are marked the same
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c32adb562a947ebb7bce08b260c64886 = L.circleMarker(
+                [67.0, -125.0],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1316376a9abd99106b11f975c8ee202b);
+        
+    
+        var popup_58b378a1979bcba2512b6c70f107d368 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ec8caaea8867b59fd34bd5e1c2981caf = $(`<div id="html_ec8caaea8867b59fd34bd5e1c2981caf" style="width: 100.0%; height: 100.0%;">             <b>Slave</b><br>             Тип: -125.0<br>             Универсалия: none is marked         <b>Источник:</b><br>             rice1989</div>`)[0];
+                popup_58b378a1979bcba2512b6c70f107d368.setContent(html_ec8caaea8867b59fd34bd5e1c2981caf);
+            
+        
+
+        circle_marker_c32adb562a947ebb7bce08b260c64886.bindPopup(popup_58b378a1979bcba2512b6c70f107d368)
+        ;
+
+        
+    
+    
+            circle_marker_c32adb562a947ebb7bce08b260c64886.bindTooltip(
+                `<div>
+                     Slave: none is marked
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ba689cb18cce26884b748fb2b963f417 = L.circleMarker(
+                [11.75, -83.75],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1316376a9abd99106b11f975c8ee202b);
+        
+    
+        var popup_0bcbe255da1b48472a76b92d457c270a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3e8738130eca936d2d1b5bc7f6d59bd4 = $(`<div id="html_3e8738130eca936d2d1b5bc7f6d59bd4" style="width: 100.0%; height: 100.0%;">             <b>Rama</b><br>             Тип: -83.75<br>             Универсалия: none is marked         <b>Источник:</b><br>             grinevald1990</div>`)[0];
+                popup_0bcbe255da1b48472a76b92d457c270a.setContent(html_3e8738130eca936d2d1b5bc7f6d59bd4);
+            
+        
+
+        circle_marker_ba689cb18cce26884b748fb2b963f417.bindPopup(popup_0bcbe255da1b48472a76b92d457c270a)
+        ;
+
+        
+    
+    
+            circle_marker_ba689cb18cce26884b748fb2b963f417.bindTooltip(
+                `<div>
+                     Rama: none is marked
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_eb13d144600e1a32b0531cc593f59587 = L.circleMarker(
+                [43.8333333333, -101.833333333],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1316376a9abd99106b11f975c8ee202b);
+        
+    
+        var popup_40a04b5898ab5c56ad55e6b4d87a5620 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_debdd36a43ae4489a71d0be12e0675d1 = $(`<div id="html_debdd36a43ae4489a71d0be12e0675d1" style="width: 100.0%; height: 100.0%;">             <b>Lakhota</b><br>             Тип: -101.833333333<br>             Универсалия: none is marked         <b>Источник:</b><br>             vanvalin1977</div>`)[0];
+                popup_40a04b5898ab5c56ad55e6b4d87a5620.setContent(html_debdd36a43ae4489a71d0be12e0675d1);
+            
+        
+
+        circle_marker_eb13d144600e1a32b0531cc593f59587.bindPopup(popup_40a04b5898ab5c56ad55e6b4d87a5620)
+        ;
+
+        
+    
+    
+            circle_marker_eb13d144600e1a32b0531cc593f59587.bindTooltip(
+                `<div>
+                     Lakhota: none is marked
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d9ddb1e094dfc20e2896ddd5b26e7588 = L.circleMarker(
+                [49.5, -116.0],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1316376a9abd99106b11f975c8ee202b);
+        
+    
+        var popup_c51fad19b6f450884a69a7e958738c3f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_43a54775b9ac2675261f1d1af6d6fc72 = $(`<div id="html_43a54775b9ac2675261f1d1af6d6fc72" style="width: 100.0%; height: 100.0%;">             <b>Kutenai</b><br>             Тип: -116.0<br>             Универсалия: none is marked         <b>Источник:</b><br>             gervin1948b</div>`)[0];
+                popup_c51fad19b6f450884a69a7e958738c3f.setContent(html_43a54775b9ac2675261f1d1af6d6fc72);
+            
+        
+
+        circle_marker_d9ddb1e094dfc20e2896ddd5b26e7588.bindPopup(popup_c51fad19b6f450884a69a7e958738c3f)
+        ;
+
+        
+    
+    
+            circle_marker_d9ddb1e094dfc20e2896ddd5b26e7588.bindTooltip(
+                `<div>
+                     Kutenai: none is marked
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e9973a48146b288c59cffbca941d3a3c = L.circleMarker(
+                [34.9166666667, -107.583333333],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1316376a9abd99106b11f975c8ee202b);
+        
+    
+        var popup_59a0f3a6546585b83f3a4e6456ad8ba9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c13c27d8faf17a900035c29fa8424b00 = $(`<div id="html_c13c27d8faf17a900035c29fa8424b00" style="width: 100.0%; height: 100.0%;">             <b>Acoma</b><br>             Тип: -107.583333333<br>             Универсалия: none is marked         <b>Источник:</b><br>             maring1967</div>`)[0];
+                popup_59a0f3a6546585b83f3a4e6456ad8ba9.setContent(html_c13c27d8faf17a900035c29fa8424b00);
+            
+        
+
+        circle_marker_e9973a48146b288c59cffbca941d3a3c.bindPopup(popup_59a0f3a6546585b83f3a4e6456ad8ba9)
+        ;
+
+        
+    
+    
+            circle_marker_e9973a48146b288c59cffbca941d3a3c.bindTooltip(
+                `<div>
+                     Acoma: none is marked
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_942ef3acc25a3c7059a16f7ad4ed062e = L.circleMarker(
+                [-3.46666666667, 143.166666667],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1316376a9abd99106b11f975c8ee202b);
+        
+    
+        var popup_31dc82dee20356d719b177de73e96e3a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c81f179c69022508d65d7f9c5f94a2ef = $(`<div id="html_c81f179c69022508d65d7f9c5f94a2ef" style="width: 100.0%; height: 100.0%;">             <b>Arapesh (Mountain)</b><br>             Тип: 143.166666667<br>             Универсалия: none is marked         <b>Источник:</b><br>             conradwogiga1990</div>`)[0];
+                popup_31dc82dee20356d719b177de73e96e3a.setContent(html_c81f179c69022508d65d7f9c5f94a2ef);
+            
+        
+
+        circle_marker_942ef3acc25a3c7059a16f7ad4ed062e.bindPopup(popup_31dc82dee20356d719b177de73e96e3a)
+        ;
+
+        
+    
+    
+            circle_marker_942ef3acc25a3c7059a16f7ad4ed062e.bindTooltip(
+                `<div>
+                     Arapesh (Mountain): none is marked
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_076df96f690d4ae7cb122baf3756726b = L.circleMarker(
+                [-3.33333333333, 141.166666667],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1316376a9abd99106b11f975c8ee202b);
+        
+    
+        var popup_eafc421e5d298e44f1452758e0143717 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a88fa5663793e15244fbb9ec18889039 = $(`<div id="html_a88fa5663793e15244fbb9ec18889039" style="width: 100.0%; height: 100.0%;">             <b>Imonda</b><br>             Тип: 141.166666667<br>             Универсалия: none is marked         <b>Источник:</b><br>             seiler1985</div>`)[0];
+                popup_eafc421e5d298e44f1452758e0143717.setContent(html_a88fa5663793e15244fbb9ec18889039);
+            
+        
+
+        circle_marker_076df96f690d4ae7cb122baf3756726b.bindPopup(popup_eafc421e5d298e44f1452758e0143717)
+        ;
+
+        
+    
+    
+            circle_marker_076df96f690d4ae7cb122baf3756726b.bindTooltip(
+                `<div>
+                     Imonda: none is marked
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5c8021001bf70ab7d656ad4e4524b215 = L.circleMarker(
+                [-4.66666666667, 143.55],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1316376a9abd99106b11f975c8ee202b);
+        
+    
+        var popup_455774f1d79643fb1087331ae5f709fb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7fba64b7c6e940d71a8c3de8ea3f9a7b = $(`<div id="html_7fba64b7c6e940d71a8c3de8ea3f9a7b" style="width: 100.0%; height: 100.0%;">             <b>Yimas</b><br>             Тип: 143.55<br>             Универсалия: none is marked         <b>Источник:</b><br>             foley1991</div>`)[0];
+                popup_455774f1d79643fb1087331ae5f709fb.setContent(html_7fba64b7c6e940d71a8c3de8ea3f9a7b);
+            
+        
+
+        circle_marker_5c8021001bf70ab7d656ad4e4524b215.bindPopup(popup_455774f1d79643fb1087331ae5f709fb)
+        ;
+
+        
+    
+    
+            circle_marker_5c8021001bf70ab7d656ad4e4524b215.bindTooltip(
+                `<div>
+                     Yimas: none is marked
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4eda80da372a6201ce75e074a1e4fc2a = L.circleMarker(
+                [-2.58333333333, 140.583333333],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1316376a9abd99106b11f975c8ee202b);
+        
+    
+        var popup_939ba1e0dc0906531fe6a603168f590c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a222714650c91c47849cdf9e6e5b9174 = $(`<div id="html_a222714650c91c47849cdf9e6e5b9174" style="width: 100.0%; height: 100.0%;">             <b>Sentani</b><br>             Тип: 140.583333333<br>             Универсалия: none is marked         <b>Источник:</b><br>             cowan1965</div>`)[0];
+                popup_939ba1e0dc0906531fe6a603168f590c.setContent(html_a222714650c91c47849cdf9e6e5b9174);
+            
+        
+
+        circle_marker_4eda80da372a6201ce75e074a1e4fc2a.bindPopup(popup_939ba1e0dc0906531fe6a603168f590c)
+        ;
+
+        
+    
+    
+            circle_marker_4eda80da372a6201ce75e074a1e4fc2a.bindTooltip(
+                `<div>
+                     Sentani: none is marked
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1b04f833317fd87bf351e08228daba70 = L.circleMarker(
+                [-5.5, 138.5],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1316376a9abd99106b11f975c8ee202b);
+        
+    
+        var popup_e6547292d9f54a900d1a0c13e40f93d4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_997b6158a54b19204147ee1d632cd91f = $(`<div id="html_997b6158a54b19204147ee1d632cd91f" style="width: 100.0%; height: 100.0%;">             <b>Asmat</b><br>             Тип: 138.5<br>             Универсалия: none is marked         <b>Источник:</b><br>             voorhoeve1965</div>`)[0];
+                popup_e6547292d9f54a900d1a0c13e40f93d4.setContent(html_997b6158a54b19204147ee1d632cd91f);
+            
+        
+
+        circle_marker_1b04f833317fd87bf351e08228daba70.bindPopup(popup_e6547292d9f54a900d1a0c13e40f93d4)
+        ;
+
+        
+    
+    
+            circle_marker_1b04f833317fd87bf351e08228daba70.bindTooltip(
+                `<div>
+                     Asmat: none is marked
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9e2738a73d17ec52dc33815ff2aaf61e = L.circleMarker(
+                [-4.66666666667, 143.333333333],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1316376a9abd99106b11f975c8ee202b);
+        
+    
+        var popup_7f9a638b704e640540e8d8235c9c363c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7593a569f76ad26ea4804077e6b86c99 = $(`<div id="html_7593a569f76ad26ea4804077e6b86c99" style="width: 100.0%; height: 100.0%;">             <b>Alamblak</b><br>             Тип: 143.333333333<br>             Универсалия: marked O, unmarked T         <b>Источник:</b><br>             bruce1984</div>`)[0];
+                popup_7f9a638b704e640540e8d8235c9c363c.setContent(html_7593a569f76ad26ea4804077e6b86c99);
+            
+        
+
+        circle_marker_9e2738a73d17ec52dc33815ff2aaf61e.bindPopup(popup_7f9a638b704e640540e8d8235c9c363c)
+        ;
+
+        
+    
+    
+            circle_marker_9e2738a73d17ec52dc33815ff2aaf61e.bindTooltip(
+                `<div>
+                     Alamblak: marked O, unmarked T
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d3a4252f4b0d7d142093287bb45b9a70 = L.circleMarker(
+                [54.0, -110.0],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1316376a9abd99106b11f975c8ee202b);
+        
+    
+        var popup_f421d87374252f8d82d17d744c6ef21b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e0af8e29f66cf4d11f89b7fd0c005eab = $(`<div id="html_e0af8e29f66cf4d11f89b7fd0c005eab" style="width: 100.0%; height: 100.0%;">             <b>Plains Cree</b><br>             Тип: -110.0<br>             Универсалия: none is marked         <b>Источник:</b><br>             dahlstrom2013</div>`)[0];
+                popup_f421d87374252f8d82d17d744c6ef21b.setContent(html_e0af8e29f66cf4d11f89b7fd0c005eab);
+            
+        
+
+        circle_marker_d3a4252f4b0d7d142093287bb45b9a70.bindPopup(popup_f421d87374252f8d82d17d744c6ef21b)
+        ;
+
+        
+    
+    
+            circle_marker_d3a4252f4b0d7d142093287bb45b9a70.bindTooltip(
+                `<div>
+                     Plains Cree: none is marked
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9fd812941f61bc03bd35a930db2121b5 = L.circleMarker(
+                [19.6666666667, -99.0],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1316376a9abd99106b11f975c8ee202b);
+        
+    
+        var popup_b872323c960740bce077014e1d241e29 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2b5a43b8dd78cd56f76c8535cfccdd5c = $(`<div id="html_2b5a43b8dd78cd56f76c8535cfccdd5c" style="width: 100.0%; height: 100.0%;">             <b>Nahuatl (Tetelcingo)</b><br>             Тип: -99.0<br>             Универсалия: none is marked         <b>Источник:</b><br>             tuggy1979<br> tuggy1989</div>`)[0];
+                popup_b872323c960740bce077014e1d241e29.setContent(html_2b5a43b8dd78cd56f76c8535cfccdd5c);
+            
+        
+
+        circle_marker_9fd812941f61bc03bd35a930db2121b5.bindPopup(popup_b872323c960740bce077014e1d241e29)
+        ;
+
+        
+    
+    
+            circle_marker_9fd812941f61bc03bd35a930db2121b5.bindTooltip(
+                `<div>
+                     Nahuatl (Tetelcingo): none is marked
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3626a27b1f44a22d82880de5eef75635 = L.circleMarker(
+                [49.2, -123.0],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1316376a9abd99106b11f975c8ee202b);
+        
+    
+        var popup_3b073757fc9dd1b2a43a6375afcd0d71 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1fc308a7b3cef40d33c7bacadf8faf6c = $(`<div id="html_1fc308a7b3cef40d33c7bacadf8faf6c" style="width: 100.0%; height: 100.0%;">             <b>Halkomelem (Island)</b><br>             Тип: -123.0<br>             Универсалия: marked T, unmarked O         <b>Источник:</b><br>             gerdts1982</div>`)[0];
+                popup_3b073757fc9dd1b2a43a6375afcd0d71.setContent(html_1fc308a7b3cef40d33c7bacadf8faf6c);
+            
+        
+
+        circle_marker_3626a27b1f44a22d82880de5eef75635.bindPopup(popup_3b073757fc9dd1b2a43a6375afcd0d71)
+        ;
+
+        
+    
+    
+            circle_marker_3626a27b1f44a22d82880de5eef75635.bindTooltip(
+                `<div>
+                     Halkomelem (Island): marked T, unmarked O
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_eebd5edd3bb2e19d96e605752e1a181e = L.circleMarker(
+                [59.5, -160.0],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1316376a9abd99106b11f975c8ee202b);
+        
+    
+        var popup_d2aa899e696e7a95164ae2cc0670bbd7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d27d3b719a1922fa8b75911b7e16b152 = $(`<div id="html_d27d3b719a1922fa8b75911b7e16b152" style="width: 100.0%; height: 100.0%;">             <b>Central Yup'ik</b><br>             Тип: -160.0<br>             Универсалия: mixed         <b>Источник:</b><br>             miyaoka2010</div>`)[0];
+                popup_d2aa899e696e7a95164ae2cc0670bbd7.setContent(html_d27d3b719a1922fa8b75911b7e16b152);
+            
+        
+
+        circle_marker_eebd5edd3bb2e19d96e605752e1a181e.bindPopup(popup_d2aa899e696e7a95164ae2cc0670bbd7)
+        ;
+
+        
+    
+    
+            circle_marker_eebd5edd3bb2e19d96e605752e1a181e.bindTooltip(
+                `<div>
+                     Central Yup'ik: mixed
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_828b5bdf8fd42c95a69a8701b49b3182 = L.circleMarker(
+                [42.75, -76.1666666667],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1316376a9abd99106b11f975c8ee202b);
+        
+    
+        var popup_917a0f1618c4fec1d0aac7d2f0efc4db = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_79222395d14626c3d49acd3b04eca3c4 = $(`<div id="html_79222395d14626c3d49acd3b04eca3c4" style="width: 100.0%; height: 100.0%;">             <b>Onondaga</b><br>             Тип: -76.1666666667<br>             Универсалия: none is marked         <b>Источник:</b><br>             woodbury2018</div>`)[0];
+                popup_917a0f1618c4fec1d0aac7d2f0efc4db.setContent(html_79222395d14626c3d49acd3b04eca3c4);
+            
+        
+
+        circle_marker_828b5bdf8fd42c95a69a8701b49b3182.bindPopup(popup_917a0f1618c4fec1d0aac7d2f0efc4db)
+        ;
+
+        
+    
+    
+            circle_marker_828b5bdf8fd42c95a69a8701b49b3182.bindTooltip(
+                `<div>
+                     Onondaga: none is marked
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ee303ad42bfc43c3f11c481cc5c22598 = L.circleMarker(
+                [41.6666666667, -123.0],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1316376a9abd99106b11f975c8ee202b);
+        
+    
+        var popup_42d38c518f3a1d6cdfd8a63fcf478995 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0f262fc931d901307f1f75cc40e19506 = $(`<div id="html_0f262fc931d901307f1f75cc40e19506" style="width: 100.0%; height: 100.0%;">             <b>Karok</b><br>             Тип: -123.0<br>             Универсалия: none is marked         <b>Источник:</b><br>             bright1957</div>`)[0];
+                popup_42d38c518f3a1d6cdfd8a63fcf478995.setContent(html_0f262fc931d901307f1f75cc40e19506);
+            
+        
+
+        circle_marker_ee303ad42bfc43c3f11c481cc5c22598.bindPopup(popup_42d38c518f3a1d6cdfd8a63fcf478995)
+        ;
+
+        
+    
+    
+            circle_marker_ee303ad42bfc43c3f11c481cc5c22598.bindTooltip(
+                `<div>
+                     Karok: none is marked
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6090981052ae0532fd0f9d54fdee45d2 = L.circleMarker(
+                [-17.8333333333, 178.0],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1316376a9abd99106b11f975c8ee202b);
+        
+    
+        var popup_657a12f7120a5f07f3f86cbcaad9a456 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1cf1c562d1f548deee900bd99f999ece = $(`<div id="html_1cf1c562d1f548deee900bd99f999ece" style="width: 100.0%; height: 100.0%;">             <b>Fijian</b><br>             Тип: 178.0<br>             Универсалия: none is marked         <b>Источник:</b><br>             okamoto2017<br> dixon1988</div>`)[0];
+                popup_657a12f7120a5f07f3f86cbcaad9a456.setContent(html_1cf1c562d1f548deee900bd99f999ece);
+            
+        
+
+        circle_marker_6090981052ae0532fd0f9d54fdee45d2.bindPopup(popup_657a12f7120a5f07f3f86cbcaad9a456)
+        ;
+
+        
+    
+    
+            circle_marker_6090981052ae0532fd0f9d54fdee45d2.bindTooltip(
+                `<div>
+                     Fijian: none is marked
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_534dad95f973b032baeaea5c15424e20 = L.circleMarker(
+                [-7.83333333333, 140.166666667],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1316376a9abd99106b11f975c8ee202b);
+        
+    
+        var popup_f48c17bac03fce025c1026c4b628b6b6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_43aac041904d815889bf08e5fda0b8b8 = $(`<div id="html_43aac041904d815889bf08e5fda0b8b8" style="width: 100.0%; height: 100.0%;">             <b>Marind</b><br>             Тип: 140.166666667<br>             Универсалия: none is marked         <b>Источник:</b><br>             olsson2017</div>`)[0];
+                popup_f48c17bac03fce025c1026c4b628b6b6.setContent(html_43aac041904d815889bf08e5fda0b8b8);
+            
+        
+
+        circle_marker_534dad95f973b032baeaea5c15424e20.bindPopup(popup_f48c17bac03fce025c1026c4b628b6b6)
+        ;
+
+        
+    
+    
+            circle_marker_534dad95f973b032baeaea5c15424e20.bindTooltip(
+                `<div>
+                     Marind: none is marked
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ac0c363b60bcc1187fe7f3cfcd97ffd8 = L.circleMarker(
+                [-9.08333333333, 159.2],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1316376a9abd99106b11f975c8ee202b);
+        
+    
+        var popup_3cc00593de6a1ab170875a11f90280a2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_645d457af8dc39178c940e4f4772de54 = $(`<div id="html_645d457af8dc39178c940e4f4772de54" style="width: 100.0%; height: 100.0%;">             <b>Lavukaleve</b><br>             Тип: 159.2<br>             Универсалия: none is marked         <b>Источник:</b><br>             terrill1999</div>`)[0];
+                popup_3cc00593de6a1ab170875a11f90280a2.setContent(html_645d457af8dc39178c940e4f4772de54);
+            
+        
+
+        circle_marker_ac0c363b60bcc1187fe7f3cfcd97ffd8.bindPopup(popup_3cc00593de6a1ab170875a11f90280a2)
+        ;
+
+        
+    
+    
+            circle_marker_ac0c363b60bcc1187fe7f3cfcd97ffd8.bindTooltip(
+                `<div>
+                     Lavukaleve: none is marked
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_56f9cf3a3d6b6edf5de592bd906c8f17 = L.circleMarker(
+                [-1.33333333333, 132.5],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1316376a9abd99106b11f975c8ee202b);
+        
+    
+        var popup_3a805efe8099d0d97fbe73a6c9011028 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d3cab4c3a3bbfca4c171b88680c1b127 = $(`<div id="html_d3cab4c3a3bbfca4c171b88680c1b127" style="width: 100.0%; height: 100.0%;">             <b>Maybrat</b><br>             Тип: 132.5<br>             Универсалия: none is marked         <b>Источник:</b><br>             dol2007</div>`)[0];
+                popup_3a805efe8099d0d97fbe73a6c9011028.setContent(html_d3cab4c3a3bbfca4c171b88680c1b127);
+            
+        
+
+        circle_marker_56f9cf3a3d6b6edf5de592bd906c8f17.bindPopup(popup_3a805efe8099d0d97fbe73a6c9011028)
+        ;
+
+        
+    
+    
+            circle_marker_56f9cf3a3d6b6edf5de592bd906c8f17.bindTooltip(
+                `<div>
+                     Maybrat: none is marked
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e3683eac0475411bb1b6064c5941091f = L.circleMarker(
+                [15.0, 121.0],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1316376a9abd99106b11f975c8ee202b);
+        
+    
+        var popup_915afeb2dbe012f3367160f2f2357aa7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0e76dd7241c5610f2534812d35f8c97c = $(`<div id="html_0e76dd7241c5610f2534812d35f8c97c" style="width: 100.0%; height: 100.0%;">             <b>Tagalog</b><br>             Тип: 121.0<br>             Универсалия: both are marked the same         <b>Источник:</b><br>             dixon1988<br> okamoto2017</div>`)[0];
+                popup_915afeb2dbe012f3367160f2f2357aa7.setContent(html_0e76dd7241c5610f2534812d35f8c97c);
+            
+        
+
+        circle_marker_e3683eac0475411bb1b6064c5941091f.bindPopup(popup_915afeb2dbe012f3367160f2f2357aa7)
+        ;
+
+        
+    
+    
+            circle_marker_e3683eac0475411bb1b6064c5941091f.bindTooltip(
+                `<div>
+                     Tagalog: both are marked the same
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d43394ad08aafe3cdb1d4bbb0bd228ac = L.circleMarker(
+                [-7.75, 147.55],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1316376a9abd99106b11f975c8ee202b);
+        
+    
+        var popup_7dc16e84898f84ab0fc65c790426eaed = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e49900c06fe51184004cb107c6769aac = $(`<div id="html_e49900c06fe51184004cb107c6769aac" style="width: 100.0%; height: 100.0%;">             <b>Suena</b><br>             Тип: 147.55<br>             Универсалия: none is marked         <b>Источник:</b><br>             wilson1974</div>`)[0];
+                popup_7dc16e84898f84ab0fc65c790426eaed.setContent(html_e49900c06fe51184004cb107c6769aac);
+            
+        
+
+        circle_marker_d43394ad08aafe3cdb1d4bbb0bd228ac.bindPopup(popup_7dc16e84898f84ab0fc65c790426eaed)
+        ;
+
+        
+    
+    
+            circle_marker_d43394ad08aafe3cdb1d4bbb0bd228ac.bindTooltip(
+                `<div>
+                     Suena: none is marked
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_80875e82a5bde4aa82df02354bf5bf1a = L.circleMarker(
+                [31.5, 34.8333333333],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1316376a9abd99106b11f975c8ee202b);
+        
+    
+        var popup_751d668c34668311eda754d2900fbaaa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ad598c5db4376327720e9c83b5006d76 = $(`<div id="html_ad598c5db4376327720e9c83b5006d76" style="width: 100.0%; height: 100.0%;">             <b>Hebrew</b><br>             Тип: 34.8333333333<br>             Универсалия: both are marked the same         <b>Источник:</b><br>             glinert1989</div>`)[0];
+                popup_751d668c34668311eda754d2900fbaaa.setContent(html_ad598c5db4376327720e9c83b5006d76);
+            
+        
+
+        circle_marker_80875e82a5bde4aa82df02354bf5bf1a.bindPopup(popup_751d668c34668311eda754d2900fbaaa)
+        ;
+
+        
+    
+    
+            circle_marker_80875e82a5bde4aa82df02354bf5bf1a.bindTooltip(
+                `<div>
+                     Hebrew: both are marked the same
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d6cab4c7505e4dd5a9c7ada6aea8ac52 = L.circleMarker(
+                [39.0, 35.0],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1316376a9abd99106b11f975c8ee202b);
+        
+    
+        var popup_1887814d8ab0566ffe3e5695466cd485 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f7934591a99d9ee9df396075c2dc902f = $(`<div id="html_f7934591a99d9ee9df396075c2dc902f" style="width: 100.0%; height: 100.0%;">             <b>Turkish</b><br>             Тип: 35.0<br>             Универсалия: both are marked the same         <b>Источник:</b><br>             kornfelt1997</div>`)[0];
+                popup_1887814d8ab0566ffe3e5695466cd485.setContent(html_f7934591a99d9ee9df396075c2dc902f);
+            
+        
+
+        circle_marker_d6cab4c7505e4dd5a9c7ada6aea8ac52.bindPopup(popup_1887814d8ab0566ffe3e5695466cd485)
+        ;
+
+        
+    
+    
+            circle_marker_d6cab4c7505e4dd5a9c7ada6aea8ac52.bindTooltip(
+                `<div>
+                     Turkish: both are marked the same
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_75fb69fd8c6b326ef864415756049e1b = L.circleMarker(
+                [36.5, 74.5],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1316376a9abd99106b11f975c8ee202b);
+        
+    
+        var popup_10f85c5c6d46ae41960e4ba2c0048bd7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4def28e2c985d402e6da90437cf54a27 = $(`<div id="html_4def28e2c985d402e6da90437cf54a27" style="width: 100.0%; height: 100.0%;">             <b>Burushaski</b><br>             Тип: 74.5<br>             Универсалия: both are marked the same         <b>Источник:</b><br>             willson1996</div>`)[0];
+                popup_10f85c5c6d46ae41960e4ba2c0048bd7.setContent(html_4def28e2c985d402e6da90437cf54a27);
+            
+        
+
+        circle_marker_75fb69fd8c6b326ef864415756049e1b.bindPopup(popup_10f85c5c6d46ae41960e4ba2c0048bd7)
+        ;
+
+        
+    
+    
+            circle_marker_75fb69fd8c6b326ef864415756049e1b.bindTooltip(
+                `<div>
+                     Burushaski: both are marked the same
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1de7d5458b78a0f6b83c73bbfe8478d2 = L.circleMarker(
+                [52.0, 10.0],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1316376a9abd99106b11f975c8ee202b);
+        
+    
+        var popup_5fb1e23acaece958a9192faa4047eedc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c83f1a5536379e4f789fcaf0ad059932 = $(`<div id="html_c83f1a5536379e4f789fcaf0ad059932" style="width: 100.0%; height: 100.0%;">             <b>German</b><br>             Тип: 10.0<br>             Универсалия: both are marked the same         <b>Источник:</b><br>             personal knowlege</div>`)[0];
+                popup_5fb1e23acaece958a9192faa4047eedc.setContent(html_c83f1a5536379e4f789fcaf0ad059932);
+            
+        
+
+        circle_marker_1de7d5458b78a0f6b83c73bbfe8478d2.bindPopup(popup_5fb1e23acaece958a9192faa4047eedc)
+        ;
+
+        
+    
+    
+            circle_marker_1de7d5458b78a0f6b83c73bbfe8478d2.bindTooltip(
+                `<div>
+                     German: both are marked the same
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8b11b74166245c680bec1d9aed230fd9 = L.circleMarker(
+                [42.25, 47.4166666667],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1316376a9abd99106b11f975c8ee202b);
+        
+    
+        var popup_7be99f47bedab43b1bc5049a8953a8fd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3641f5121439bacd6a26329bae61efe3 = $(`<div id="html_3641f5121439bacd6a26329bae61efe3" style="width: 100.0%; height: 100.0%;">             <b>Dargwa</b><br>             Тип: 47.4166666667<br>             Универсалия: both are marked the same         <b>Источник:</b><br>             vanderberg2001 / abdullaev1954 </div>`)[0];
+                popup_7be99f47bedab43b1bc5049a8953a8fd.setContent(html_3641f5121439bacd6a26329bae61efe3);
+            
+        
+
+        circle_marker_8b11b74166245c680bec1d9aed230fd9.bindPopup(popup_7be99f47bedab43b1bc5049a8953a8fd)
+        ;
+
+        
+    
+    
+            circle_marker_8b11b74166245c680bec1d9aed230fd9.bindTooltip(
+                `<div>
+                     Dargwa: both are marked the same
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c01efad3e4246a97aa9cf3f256585679 = L.circleMarker(
+                [37.5, 128.0],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1316376a9abd99106b11f975c8ee202b);
+        
+    
+        var popup_42e132627ae19074ba5f4d39d01198de = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f0cf7667ba40638a1291ed1fd2d4edcb = $(`<div id="html_f0cf7667ba40638a1291ed1fd2d4edcb" style="width: 100.0%; height: 100.0%;">             <b>Korean</b><br>             Тип: 128.0<br>             Универсалия: both are marked the same         <b>Источник:</b><br>             sohn1994 / Glavatskikh Anna (p. c.)</div>`)[0];
+                popup_42e132627ae19074ba5f4d39d01198de.setContent(html_f0cf7667ba40638a1291ed1fd2d4edcb);
+            
+        
+
+        circle_marker_c01efad3e4246a97aa9cf3f256585679.bindPopup(popup_42e132627ae19074ba5f4d39d01198de)
+        ;
+
+        
+    
+    
+            circle_marker_c01efad3e4246a97aa9cf3f256585679.bindTooltip(
+                `<div>
+                     Korean: both are marked the same
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_40aa8882d4b0bb743d10b9e32c15fbc5 = L.circleMarker(
+                [34.0, 110.0],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1316376a9abd99106b11f975c8ee202b);
+        
+    
+        var popup_7f8b9522355a232b90cfb0fb034b0b2c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dd63fc9621b83d80d3221d1ee8410e5e = $(`<div id="html_dd63fc9621b83d80d3221d1ee8410e5e" style="width: 100.0%; height: 100.0%;">             <b>Mandarin</b><br>             Тип: 110.0<br>             Универсалия: both are marked the same         <b>Источник:</b><br>             liu_et_al1981</div>`)[0];
+                popup_7f8b9522355a232b90cfb0fb034b0b2c.setContent(html_dd63fc9621b83d80d3221d1ee8410e5e);
+            
+        
+
+        circle_marker_40aa8882d4b0bb743d10b9e32c15fbc5.bindPopup(popup_7f8b9522355a232b90cfb0fb034b0b2c)
+        ;
+
+        
+    
+    
+            circle_marker_40aa8882d4b0bb743d10b9e32c15fbc5.bindTooltip(
+                `<div>
+                     Mandarin: both are marked the same
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_08e36de1a4378054edd72a295cd91b9d = L.circleMarker(
+                [-30.1666666667, 152.5],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1316376a9abd99106b11f975c8ee202b);
+        
+    
+        var popup_ceb355bf6c0e0b833dc294f96482da26 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fa24f32d6b94cff801568631edd1c63f = $(`<div id="html_fa24f32d6b94cff801568631edd1c63f" style="width: 100.0%; height: 100.0%;">             <b>Gumbaynggir</b><br>             Тип: 152.5<br>             Универсалия: both are marked the same         <b>Источник:</b><br>             eades1979</div>`)[0];
+                popup_ceb355bf6c0e0b833dc294f96482da26.setContent(html_fa24f32d6b94cff801568631edd1c63f);
+            
+        
+
+        circle_marker_08e36de1a4378054edd72a295cd91b9d.bindPopup(popup_ceb355bf6c0e0b833dc294f96482da26)
+        ;
+
+        
+    
+    
+            circle_marker_08e36de1a4378054edd72a295cd91b9d.bindTooltip(
+                `<div>
+                     Gumbaynggir: both are marked the same
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cb8e260aecd0fbacbea78cd9da0fdabc = L.circleMarker(
+                [-18.3333333333, 126.333333333],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1316376a9abd99106b11f975c8ee202b);
+        
+    
+        var popup_85d84e93e6a6a0417eb1e96343da1785 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e166b320dcdf243a4346ed4e4ecd7f90 = $(`<div id="html_e166b320dcdf243a4346ed4e4ecd7f90" style="width: 100.0%; height: 100.0%;">             <b>Gooniyandi</b><br>             Тип: 126.333333333<br>             Универсалия: none is marked         <b>Источник:</b><br>             mcgregor1990</div>`)[0];
+                popup_85d84e93e6a6a0417eb1e96343da1785.setContent(html_e166b320dcdf243a4346ed4e4ecd7f90);
+            
+        
+
+        circle_marker_cb8e260aecd0fbacbea78cd9da0fdabc.bindPopup(popup_85d84e93e6a6a0417eb1e96343da1785)
+        ;
+
+        
+    
+    
+            circle_marker_cb8e260aecd0fbacbea78cd9da0fdabc.bindTooltip(
+                `<div>
+                     Gooniyandi: none is marked
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ba92d97222ecf586eaa447b12c42a013 = L.circleMarker(
+                [-11.5, 131.0],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1316376a9abd99106b11f975c8ee202b);
+        
+    
+        var popup_6e488280eab3eadf7dbb1dd7303901f0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_85f90c83c915f4ff7086a3a792e5f714 = $(`<div id="html_85f90c83c915f4ff7086a3a792e5f714" style="width: 100.0%; height: 100.0%;">             <b>Tiwi</b><br>             Тип: 131.0<br>             Универсалия: none is marked         <b>Источник:</b><br>             osborn1974</div>`)[0];
+                popup_6e488280eab3eadf7dbb1dd7303901f0.setContent(html_85f90c83c915f4ff7086a3a792e5f714);
+            
+        
+
+        circle_marker_ba92d97222ecf586eaa447b12c42a013.bindPopup(popup_6e488280eab3eadf7dbb1dd7303901f0)
+        ;
+
+        
+    
+    
+            circle_marker_ba92d97222ecf586eaa447b12c42a013.bindTooltip(
+                `<div>
+                     Tiwi: none is marked
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6ec6743f6982f21658674db2cf714b81 = L.circleMarker(
+                [-17.05, 139.5],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1316376a9abd99106b11f975c8ee202b);
+        
+    
+        var popup_1937cc3bec46ca545b9d7d13d614d0e2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_536dd3afe8d54fc9403e9b8e62ba703d = $(`<div id="html_536dd3afe8d54fc9403e9b8e62ba703d" style="width: 100.0%; height: 100.0%;">             <b>Kayardild</b><br>             Тип: 139.5<br>             Универсалия: both are marked differently         <b>Источник:</b><br>             evans1995</div>`)[0];
+                popup_1937cc3bec46ca545b9d7d13d614d0e2.setContent(html_536dd3afe8d54fc9403e9b8e62ba703d);
+            
+        
+
+        circle_marker_6ec6743f6982f21658674db2cf714b81.bindPopup(popup_1937cc3bec46ca545b9d7d13d614d0e2)
+        ;
+
+        
+    
+    
+            circle_marker_6ec6743f6982f21658674db2cf714b81.bindTooltip(
+                `<div>
+                     Kayardild: both are marked differently
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_feae1025c9f0fa085c468353d4582a7c = L.circleMarker(
+                [-14.6666666667, 133.5],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1316376a9abd99106b11f975c8ee202b);
+        
+    
+        var popup_05637ca7b2955278054142a0592cdd19 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_39a91ce4d28195b9ac8b6b6a900021d8 = $(`<div id="html_39a91ce4d28195b9ac8b6b6a900021d8" style="width: 100.0%; height: 100.0%;">             <b>Mangarrayi</b><br>             Тип: 133.5<br>             Универсалия: both are marked the same         <b>Источник:</b><br>             merlan1998</div>`)[0];
+                popup_05637ca7b2955278054142a0592cdd19.setContent(html_39a91ce4d28195b9ac8b6b6a900021d8);
+            
+        
+
+        circle_marker_feae1025c9f0fa085c468353d4582a7c.bindPopup(popup_05637ca7b2955278054142a0592cdd19)
+        ;
+
+        
+    
+    
+            circle_marker_feae1025c9f0fa085c468353d4582a7c.bindTooltip(
+                `<div>
+                     Mangarrayi: both are marked the same
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_71ab0cb5cec0305ee20de35cc0e4b58c = L.circleMarker(
+                [70.0, 76.0],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1316376a9abd99106b11f975c8ee202b);
+        
+    
+        var popup_f843b1af194f8132c5722461543c4881 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5eda70acc8f7fbe1d3c5f80b16c35485 = $(`<div id="html_5eda70acc8f7fbe1d3c5f80b16c35485" style="width: 100.0%; height: 100.0%;">             <b>Nenets</b><br>             Тип: 76.0<br>             Универсалия: both are marked the same         <b>Источник:</b><br>             nikolaeva2014</div>`)[0];
+                popup_f843b1af194f8132c5722461543c4881.setContent(html_5eda70acc8f7fbe1d3c5f80b16c35485);
+            
+        
+
+        circle_marker_71ab0cb5cec0305ee20de35cc0e4b58c.bindPopup(popup_f843b1af194f8132c5722461543c4881)
+        ;
+
+        
+    
+    
+            circle_marker_71ab0cb5cec0305ee20de35cc0e4b58c.bindTooltip(
+                `<div>
+                     Nenets: both are marked the same
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_97599af8bbdafa4bdad224b4510ac93f = L.circleMarker(
+                [56.0, 125.0],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1316376a9abd99106b11f975c8ee202b);
+        
+    
+        var popup_43903ef518c2067dd9d7083e5836fbd7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b51d052c7ab1b5fbdf46971c1eb0860c = $(`<div id="html_b51d052c7ab1b5fbdf46971c1eb0860c" style="width: 100.0%; height: 100.0%;">             <b>Evenki</b><br>             Тип: 125.0<br>             Универсалия: both are marked the same         <b>Источник:</b><br>             nedjalkov1997</div>`)[0];
+                popup_43903ef518c2067dd9d7083e5836fbd7.setContent(html_b51d052c7ab1b5fbdf46971c1eb0860c);
+            
+        
+
+        circle_marker_97599af8bbdafa4bdad224b4510ac93f.bindPopup(popup_43903ef518c2067dd9d7083e5836fbd7)
+        ;
+
+        
+    
+    
+            circle_marker_97599af8bbdafa4bdad224b4510ac93f.bindTooltip(
+                `<div>
+                     Evenki: both are marked the same
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_011ed9e159be281aed0bb4a276af9427 = L.circleMarker(
+                [67.0, 187.0],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1316376a9abd99106b11f975c8ee202b);
+        
+    
+        var popup_da588e3ceba9fbb3bb54eca9f50c8365 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_451fe05c1b37d420ac40cae419da1af6 = $(`<div id="html_451fe05c1b37d420ac40cae419da1af6" style="width: 100.0%; height: 100.0%;">             <b>Chukchi</b><br>             Тип: 187.0<br>             Универсалия: both are marked the same         <b>Источник:</b><br>             dunn1999</div>`)[0];
+                popup_da588e3ceba9fbb3bb54eca9f50c8365.setContent(html_451fe05c1b37d420ac40cae419da1af6);
+            
+        
+
+        circle_marker_011ed9e159be281aed0bb4a276af9427.bindPopup(popup_da588e3ceba9fbb3bb54eca9f50c8365)
+        ;
+
+        
+    
+    
+            circle_marker_011ed9e159be281aed0bb4a276af9427.bindTooltip(
+                `<div>
+                     Chukchi: both are marked the same
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a227a0cc2331326885e3d0353c558726 = L.circleMarker(
+                [53.3333333333, 142.0],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1316376a9abd99106b11f975c8ee202b);
+        
+    
+        var popup_31b523e71e72760fcb0a5d64eddfa233 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_550387b8a3e6a3f1c88fc97f21772383 = $(`<div id="html_550387b8a3e6a3f1c88fc97f21772383" style="width: 100.0%; height: 100.0%;">             <b>Nivkh</b><br>             Тип: 142.0<br>             Универсалия: both are marked the same         <b>Источник:</b><br>             gruzdeva 1998<br> nedjalkov&otanina2013</div>`)[0];
+                popup_31b523e71e72760fcb0a5d64eddfa233.setContent(html_550387b8a3e6a3f1c88fc97f21772383);
+            
+        
+
+        circle_marker_a227a0cc2331326885e3d0353c558726.bindPopup(popup_31b523e71e72760fcb0a5d64eddfa233)
+        ;
+
+        
+    
+    
+            circle_marker_a227a0cc2331326885e3d0353c558726.bindTooltip(
+                `<div>
+                     Nivkh: both are marked the same
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_736ab7ed4d79de0ec0a5987c78a1294d = L.circleMarker(
+                [43.0, 143.0],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1316376a9abd99106b11f975c8ee202b);
+        
+    
+        var popup_285059f252d31d40fb9dfbf2b1ef1d9c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f20f2ce2f4fe4991f13f5656a4b76bce = $(`<div id="html_f20f2ce2f4fe4991f13f5656a4b76bce" style="width: 100.0%; height: 100.0%;">             <b>Ainu</b><br>             Тип: 143.0<br>             Универсалия: none is marked         <b>Источник:</b><br>             bugaeva2011</div>`)[0];
+                popup_285059f252d31d40fb9dfbf2b1ef1d9c.setContent(html_f20f2ce2f4fe4991f13f5656a4b76bce);
+            
+        
+
+        circle_marker_736ab7ed4d79de0ec0a5987c78a1294d.bindPopup(popup_285059f252d31d40fb9dfbf2b1ef1d9c)
+        ;
+
+        
+    
+    
+            circle_marker_736ab7ed4d79de0ec0a5987c78a1294d.bindTooltip(
+                `<div>
+                     Ainu: none is marked
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4ac7789cd225470d49c28e9244ebd3b2 = L.circleMarker(
+                [64.0, 87.0],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1316376a9abd99106b11f975c8ee202b);
+        
+    
+        var popup_492c537aae12182bcf3c24baa2c25565 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ebc42ecc00c64a6353c52ac1e454310c = $(`<div id="html_ebc42ecc00c64a6353c52ac1e454310c" style="width: 100.0%; height: 100.0%;">             <b>Ket</b><br>             Тип: 87.0<br>             Универсалия: none is marked         <b>Источник:</b><br>             nefedov<br>malchukov&vajda2007</div>`)[0];
+                popup_492c537aae12182bcf3c24baa2c25565.setContent(html_ebc42ecc00c64a6353c52ac1e454310c);
+            
+        
+
+        circle_marker_4ac7789cd225470d49c28e9244ebd3b2.bindPopup(popup_492c537aae12182bcf3c24baa2c25565)
+        ;
+
+        
+    
+    
+            circle_marker_4ac7789cd225470d49c28e9244ebd3b2.bindTooltip(
+                `<div>
+                     Ket: none is marked
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_edf497d59b65ce48fc4847c41326cb3a = L.circleMarker(
+                [10.5, 106.5],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1316376a9abd99106b11f975c8ee202b);
+        
+    
+        var popup_c23e106c9dce6b7ec86f7bd6fdec0c8f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2397c1bc4d31882d5813a8cff69d0809 = $(`<div id="html_2397c1bc4d31882d5813a8cff69d0809" style="width: 100.0%; height: 100.0%;">             <b>Vietnameese</b><br>             Тип: 106.5<br>             Универсалия: none is marked         <b>Источник:</b><br>             nguyen1997</div>`)[0];
+                popup_c23e106c9dce6b7ec86f7bd6fdec0c8f.setContent(html_2397c1bc4d31882d5813a8cff69d0809);
+            
+        
+
+        circle_marker_edf497d59b65ce48fc4847c41326cb3a.bindPopup(popup_c23e106c9dce6b7ec86f7bd6fdec0c8f)
+        ;
+
+        
+    
+    
+            circle_marker_edf497d59b65ce48fc4847c41326cb3a.bindTooltip(
+                `<div>
+                     Vietnameese: none is marked
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d7ec6aad646c51f6b9dd749817d37ba1 = L.circleMarker(
+                [43.0, -3.0],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1316376a9abd99106b11f975c8ee202b);
+        
+    
+        var popup_b80e3a2b22e0a115fe79b6de1fd7f930 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_03a22c76c06554a79b4b17c895f75cb8 = $(`<div id="html_03a22c76c06554a79b4b17c895f75cb8" style="width: 100.0%; height: 100.0%;">             <b>Basque</b><br>             Тип: -3.0<br>             Универсалия: both are marked the same         <b>Источник:</b><br>             laka1996</div>`)[0];
+                popup_b80e3a2b22e0a115fe79b6de1fd7f930.setContent(html_03a22c76c06554a79b4b17c895f75cb8);
+            
+        
+
+        circle_marker_d7ec6aad646c51f6b9dd749817d37ba1.bindPopup(popup_b80e3a2b22e0a115fe79b6de1fd7f930)
+        ;
+
+        
+    
+    
+            circle_marker_d7ec6aad646c51f6b9dd749817d37ba1.bindTooltip(
+                `<div>
+                     Basque: both are marked the same
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6471290bb0c90bf7746a0fbee4140094 = L.circleMarker(
+                [18.0, 103.0],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1316376a9abd99106b11f975c8ee202b);
+        
+    
+        var popup_ae786bfb0d7e72d25e4d65d858116fc4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_17c5c6d7c85949e39b2eacb2db0cfae6 = $(`<div id="html_17c5c6d7c85949e39b2eacb2db0cfae6" style="width: 100.0%; height: 100.0%;">             <b>Lao</b><br>             Тип: 103.0<br>             Универсалия: none is marked         <b>Источник:</b><br>             enfield2007</div>`)[0];
+                popup_ae786bfb0d7e72d25e4d65d858116fc4.setContent(html_17c5c6d7c85949e39b2eacb2db0cfae6);
+            
+        
+
+        circle_marker_6471290bb0c90bf7746a0fbee4140094.bindPopup(popup_ae786bfb0d7e72d25e4d65d858116fc4)
+        ;
+
+        
+    
+    
+            circle_marker_6471290bb0c90bf7746a0fbee4140094.bindTooltip(
+                `<div>
+                     Lao: none is marked
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ed2850b548621b7c6e13b79793668d22 = L.circleMarker(
+                [14.0, 76.0],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1316376a9abd99106b11f975c8ee202b);
+        
+    
+        var popup_0a86d198daf0f5d0f19ef7544a5bfa7e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0817e1259d90ec05336ed0718d7bb4b4 = $(`<div id="html_0817e1259d90ec05336ed0718d7bb4b4" style="width: 100.0%; height: 100.0%;">             <b>Kannada</b><br>             Тип: 76.0<br>             Универсалия: both are marked the same         <b>Источник:</b><br>             sridhar1990</div>`)[0];
+                popup_0a86d198daf0f5d0f19ef7544a5bfa7e.setContent(html_0817e1259d90ec05336ed0718d7bb4b4);
+            
+        
+
+        circle_marker_ed2850b548621b7c6e13b79793668d22.bindPopup(popup_0a86d198daf0f5d0f19ef7544a5bfa7e)
+        ;
+
+        
+    
+    
+            circle_marker_ed2850b548621b7c6e13b79793668d22.bindTooltip(
+                `<div>
+                     Kannada: both are marked the same
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6ec9e20f8e1cb363e036f2aa7180f2c1 = L.circleMarker(
+                [28.33, 109.67],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1316376a9abd99106b11f975c8ee202b);
+        
+    
+        var popup_9fc5acd9d3cf9aca342fc7d1db93dc2d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2a9796b5c5f6cf56ad05a593595567e3 = $(`<div id="html_2a9796b5c5f6cf56ad05a593595567e3" style="width: 100.0%; height: 100.0%;">             <b>Xong</b><br>             Тип: 109.67<br>             Универсалия: none is marked         <b>Источник:</b><br>             sposato2021</div>`)[0];
+                popup_9fc5acd9d3cf9aca342fc7d1db93dc2d.setContent(html_2a9796b5c5f6cf56ad05a593595567e3);
+            
+        
+
+        circle_marker_6ec9e20f8e1cb363e036f2aa7180f2c1.bindPopup(popup_9fc5acd9d3cf9aca342fc7d1db93dc2d)
+        ;
+
+        
+    
+    
+            circle_marker_6ec9e20f8e1cb363e036f2aa7180f2c1.bindTooltip(
+                `<div>
+                     Xong: none is marked
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8be346aaeb1ff47daa847004ace218e5 = L.circleMarker(
+                [42.0, 44.0],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1316376a9abd99106b11f975c8ee202b);
+        
+    
+        var popup_33b06910592852efae1fb5645c08b249 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e1ce039b1f557c2e6acd45ae86b71e9f = $(`<div id="html_e1ce039b1f557c2e6acd45ae86b71e9f" style="width: 100.0%; height: 100.0%;">             <b>Georgian</b><br>             Тип: 44.0<br>             Универсалия: both are marked the same         <b>Источник:</b><br>             hillery1993<br> wier2007</div>`)[0];
+                popup_33b06910592852efae1fb5645c08b249.setContent(html_e1ce039b1f557c2e6acd45ae86b71e9f);
+            
+        
+
+        circle_marker_8be346aaeb1ff47daa847004ace218e5.bindPopup(popup_33b06910592852efae1fb5645c08b249)
+        ;
+
+        
+    
+    
+            circle_marker_8be346aaeb1ff47daa847004ace218e5.bindTooltip(
+                `<div>
+                     Georgian: both are marked the same
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6afb8766e96e81c90f8b021c98f50c01 = L.circleMarker(
+                [9.33333333333, -61.6666666667],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1316376a9abd99106b11f975c8ee202b);
+        
+    
+        var popup_2315cba06af17285ce96100595725fce = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c7459e7f13e64ed013fe7e68e79d8f2e = $(`<div id="html_c7459e7f13e64ed013fe7e68e79d8f2e" style="width: 100.0%; height: 100.0%;">             <b>Warao</b><br>             Тип: -61.6666666667<br>             Универсалия: none is marked         <b>Источник:</b><br>             romero-figueroa1997</div>`)[0];
+                popup_2315cba06af17285ce96100595725fce.setContent(html_c7459e7f13e64ed013fe7e68e79d8f2e);
+            
+        
+
+        circle_marker_6afb8766e96e81c90f8b021c98f50c01.bindPopup(popup_2315cba06af17285ce96100595725fce)
+        ;
+
+        
+    
+    
+            circle_marker_6afb8766e96e81c90f8b021c98f50c01.bindTooltip(
+                `<div>
+                     Warao: none is marked
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fd3194fb605c92c7f93054766205d4e9 = L.circleMarker(
+                [-38.0, -72.0],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1316376a9abd99106b11f975c8ee202b);
+        
+    
+        var popup_123611fb11e921e2ec31abd9b613df1f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5015159ebc349425b792f0aead67ca32 = $(`<div id="html_5015159ebc349425b792f0aead67ca32" style="width: 100.0%; height: 100.0%;">             <b>Mapudungun</b><br>             Тип: -72.0<br>             Универсалия: none is marked         <b>Источник:</b><br>             golluscio2010 </div>`)[0];
+                popup_123611fb11e921e2ec31abd9b613df1f.setContent(html_5015159ebc349425b792f0aead67ca32);
+            
+        
+
+        circle_marker_fd3194fb605c92c7f93054766205d4e9.bindPopup(popup_123611fb11e921e2ec31abd9b613df1f)
+        ;
+
+        
+    
+    
+            circle_marker_fd3194fb605c92c7f93054766205d4e9.bindTooltip(
+                `<div>
+                     Mapudungun: none is marked
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6542141673e8998d25c8795c07c0fa9e = L.circleMarker(
+                [-7.0, -62.0],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1316376a9abd99106b11f975c8ee202b);
+        
+    
+        var popup_2501505f901ed4d790704a2135d5e8d9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cef9aca2ecb3bd48732499a572e038c3 = $(`<div id="html_cef9aca2ecb3bd48732499a572e038c3" style="width: 100.0%; height: 100.0%;">             <b>Pirahã</b><br>             Тип: -62.0<br>             Универсалия: none is marked         <b>Источник:</b><br>             everett1986</div>`)[0];
+                popup_2501505f901ed4d790704a2135d5e8d9.setContent(html_cef9aca2ecb3bd48732499a572e038c3);
+            
+        
+
+        circle_marker_6542141673e8998d25c8795c07c0fa9e.bindPopup(popup_2501505f901ed4d790704a2135d5e8d9)
+        ;
+
+        
+    
+    
+            circle_marker_6542141673e8998d25c8795c07c0fa9e.bindTooltip(
+                `<div>
+                     Pirahã: none is marked
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e30dbd82e38b60507d2915f009c1df8a = L.circleMarker(
+                [0.333333333333, -78.0],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1316376a9abd99106b11f975c8ee202b);
+        
+    
+        var popup_87d452d25a7b270043fe05b5c8114255 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9752181c7b4050844ece65ed4f0f8f26 = $(`<div id="html_9752181c7b4050844ece65ed4f0f8f26" style="width: 100.0%; height: 100.0%;">             <b>Quechua (Imbabura)</b><br>             Тип: -78.0<br>             Универсалия: both are marked the same         <b>Источник:</b><br>             cole1982</div>`)[0];
+                popup_87d452d25a7b270043fe05b5c8114255.setContent(html_9752181c7b4050844ece65ed4f0f8f26);
+            
+        
+
+        circle_marker_e30dbd82e38b60507d2915f009c1df8a.bindPopup(popup_87d452d25a7b270043fe05b5c8114255)
+        ;
+
+        
+    
+    
+            circle_marker_e30dbd82e38b60507d2915f009c1df8a.bindTooltip(
+                `<div>
+                     Quechua (Imbabura): both are marked the same
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d587e952c760ac93db625695d60fe874 = L.circleMarker(
+                [-26.0, -56.0],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1316376a9abd99106b11f975c8ee202b);
+        
+    
+        var popup_79da46f0b421db6c7ccceed847559c00 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_32252f7f38215bcc0aba66c659d812fb = $(`<div id="html_32252f7f38215bcc0aba66c659d812fb" style="width: 100.0%; height: 100.0%;">             <b>Guaraní</b><br>             Тип: -56.0<br>             Универсалия: none is marked         <b>Источник:</b><br>             gregores_suárez1967</div>`)[0];
+                popup_79da46f0b421db6c7ccceed847559c00.setContent(html_32252f7f38215bcc0aba66c659d812fb);
+            
+        
+
+        circle_marker_d587e952c760ac93db625695d60fe874.bindPopup(popup_79da46f0b421db6c7ccceed847559c00)
+        ;
+
+        
+    
+    
+            circle_marker_d587e952c760ac93db625695d60fe874.bindTooltip(
+                `<div>
+                     Guaraní: none is marked
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5009e5424daabd3173cffc80f9fcfbf6 = L.circleMarker(
+                [-7.0, -45.0],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1316376a9abd99106b11f975c8ee202b);
+        
+    
+        var popup_6c7109486ab1602164fae9a443d34239 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6dad41cb061d4c741363cdd165cff95a = $(`<div id="html_6dad41cb061d4c741363cdd165cff95a" style="width: 100.0%; height: 100.0%;">             <b>Canela</b><br>             Тип: -45.0<br>             Универсалия: none is marked         <b>Источник:</b><br>             popjes_popjes1986</div>`)[0];
+                popup_6c7109486ab1602164fae9a443d34239.setContent(html_6dad41cb061d4c741363cdd165cff95a);
+            
+        
+
+        circle_marker_5009e5424daabd3173cffc80f9fcfbf6.bindPopup(popup_6c7109486ab1602164fae9a443d34239)
+        ;
+
+        
+    
+    
+            circle_marker_5009e5424daabd3173cffc80f9fcfbf6.bindTooltip(
+                `<div>
+                     Canela: none is marked
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c6569e18759ec7aff3fb6aa83a952fbd = L.circleMarker(
+                [10.6666666667, -73.75],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1316376a9abd99106b11f975c8ee202b);
+        
+    
+        var popup_e642d5886992265d08c8bf45bd7c0360 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2d3f5c0822a6270b2bd910c9e6eef78e = $(`<div id="html_2d3f5c0822a6270b2bd910c9e6eef78e" style="width: 100.0%; height: 100.0%;">             <b>Ika</b><br>             Тип: -73.75<br>             Универсалия: none is marked         <b>Источник:</b><br>             frank1985</div>`)[0];
+                popup_e642d5886992265d08c8bf45bd7c0360.setContent(html_2d3f5c0822a6270b2bd910c9e6eef78e);
+            
+        
+
+        circle_marker_c6569e18759ec7aff3fb6aa83a952fbd.bindPopup(popup_e642d5886992265d08c8bf45bd7c0360)
+        ;
+
+        
+    
+    
+            circle_marker_c6569e18759ec7aff3fb6aa83a952fbd.bindTooltip(
+                `<div>
+                     Ika: none is marked
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_070e6255a5e33b8da1a6b09bd15986a8 = L.circleMarker(
+                [-49.0, -75.0],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1316376a9abd99106b11f975c8ee202b);
+        
+    
+        var popup_e724a50e1c9cf2b1d75e8a1eb98aecce = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9059b4f68289846d6e3ae7128cea438a = $(`<div id="html_9059b4f68289846d6e3ae7128cea438a" style="width: 100.0%; height: 100.0%;">             <b>Qawasqar</b><br>             Тип: -75.0<br>             Универсалия: none is marked         <b>Источник:</b><br>             aguilera_f.2001</div>`)[0];
+                popup_e724a50e1c9cf2b1d75e8a1eb98aecce.setContent(html_9059b4f68289846d6e3ae7128cea438a);
+            
+        
+
+        circle_marker_070e6255a5e33b8da1a6b09bd15986a8.bindPopup(popup_e724a50e1c9cf2b1d75e8a1eb98aecce)
+        ;
+
+        
+    
+    
+            circle_marker_070e6255a5e33b8da1a6b09bd15986a8.bindTooltip(
+                `<div>
+                     Qawasqar: none is marked
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9b709d6e7c1c0c669a16c1da2409eca3 = L.circleMarker(
+                [-9.0, -67.0],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1316376a9abd99106b11f975c8ee202b);
+        
+    
+        var popup_f18062a93cbe3623ed8232370fe1a7fd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dd9237e00c7b5264545df6711a1576ca = $(`<div id="html_dd9237e00c7b5264545df6711a1576ca" style="width: 100.0%; height: 100.0%;">             <b>Apurinã</b><br>             Тип: -67.0<br>             Универсалия: none is marked         <b>Источник:</b><br>             facundes2000</div>`)[0];
+                popup_f18062a93cbe3623ed8232370fe1a7fd.setContent(html_dd9237e00c7b5264545df6711a1576ca);
+            
+        
+
+        circle_marker_9b709d6e7c1c0c669a16c1da2409eca3.bindPopup(popup_f18062a93cbe3623ed8232370fe1a7fd)
+        ;
+
+        
+    
+    
+            circle_marker_9b709d6e7c1c0c669a16c1da2409eca3.bindTooltip(
+                `<div>
+                     Apurinã: none is marked
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ecc4470cfa03e6900427f442673de6c6 = L.circleMarker(
+                [-22.5, -62.5833333333],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1316376a9abd99106b11f975c8ee202b);
+        
+    
+        var popup_972ceeefdd4de8ba9a8f29bfd5d08cc5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e10da68e2594719c65d2fe206411455d = $(`<div id="html_e10da68e2594719c65d2fe206411455d" style="width: 100.0%; height: 100.0%;">             <b>Wichí</b><br>             Тип: -62.5833333333<br>             Универсалия: none is marked         <b>Источник:</b><br>             terraza2009</div>`)[0];
+                popup_972ceeefdd4de8ba9a8f29bfd5d08cc5.setContent(html_e10da68e2594719c65d2fe206411455d);
+            
+        
+
+        circle_marker_ecc4470cfa03e6900427f442673de6c6.bindPopup(popup_972ceeefdd4de8ba9a8f29bfd5d08cc5)
+        ;
+
+        
+    
+    
+            circle_marker_ecc4470cfa03e6900427f442673de6c6.bindTooltip(
+                `<div>
+                     Wichí: none is marked
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6d6056dbd427d56730053786f0c26211 = L.circleMarker(
+                [35.0, -106.333333333],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1316376a9abd99106b11f975c8ee202b);
+        
+    
+        var popup_9c0547f672cc815febd170d000978eec = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_146f7f66d9bbda2ca84f3875bc07d126 = $(`<div id="html_146f7f66d9bbda2ca84f3875bc07d126" style="width: 100.0%; height: 100.0%;">             <b>Tiwa (Southern)</b><br>             Тип: -106.333333333<br>             Универсалия: none is marked         <b>Источник:</b><br>             allen_frantz1983</div>`)[0];
+                popup_9c0547f672cc815febd170d000978eec.setContent(html_146f7f66d9bbda2ca84f3875bc07d126);
+            
+        
+
+        circle_marker_6d6056dbd427d56730053786f0c26211.bindPopup(popup_9c0547f672cc815febd170d000978eec)
+        ;
+
+        
+    
+    
+            circle_marker_6d6056dbd427d56730053786f0c26211.bindTooltip(
+                `<div>
+                     Tiwa (Southern): none is marked
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_95d4d8b21691afdadae3d0ac0ed0a0d5 = L.circleMarker(
+                [34.8333333333, -85.1666666667],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1316376a9abd99106b11f975c8ee202b);
+        
+    
+        var popup_45c84fae36d9cc89f6fd30e62174ee4e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a21c95e913131259242efe08a5e480bd = $(`<div id="html_a21c95e913131259242efe08a5e480bd" style="width: 100.0%; height: 100.0%;">             <b>Koasati</b><br>             Тип: -85.1666666667<br>             Универсалия: both are marked the same         <b>Источник:</b><br>             kimball1991</div>`)[0];
+                popup_45c84fae36d9cc89f6fd30e62174ee4e.setContent(html_a21c95e913131259242efe08a5e480bd);
+            
+        
+
+        circle_marker_95d4d8b21691afdadae3d0ac0ed0a0d5.bindPopup(popup_45c84fae36d9cc89f6fd30e62174ee4e)
+        ;
+
+        
+    
+    
+            circle_marker_95d4d8b21691afdadae3d0ac0ed0a0d5.bindTooltip(
+                `<div>
+                     Koasati: both are marked the same
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_9926cf1726a0115a35450680e36282ba = L.polyline(
+                [[90.0, 180.0], [-90.0, 180.0]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": "5,5", "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_1316376a9abd99106b11f975c8ee202b);
+        
+</script>
+</html>
